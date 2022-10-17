@@ -1,0 +1,10 @@
+def mid(m):
+    z = []
+    i = len(m)
+    if i % 2 == 0:
+        print ("The string has an even length")
+    else:
+        for i,y in enumerate(m):
+            i = int((i / 2) + 0.5)
+            z.append(y)
+        print(z[i])
