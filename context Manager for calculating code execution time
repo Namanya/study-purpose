@@ -14,8 +14,7 @@ class Exec_Time:
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.end_time = time.time()
         print (self.end_time - self.start_time)
-        return True
-
+    
 
 with Exec_Time() as exc:
     #code to execute
