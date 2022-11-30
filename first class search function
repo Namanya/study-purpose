@@ -1,0 +1,19 @@
+def search(sequence, expected, finder):
+    for elm in sequence:
+        if finder(elm)== expected:
+            return elm
+    else:
+        raise RuntimeError(f'search for {expected} not found')
+
+
+friends = [
+    {'name':'john smith', 'age': 24},
+    {'name':'joshua james', 'age': 26},
+    {'name':'mpora eric', 'age': 29},
+
+    ]
+
+#search for the expected value 
+print(search(friends,'james reed', lambda freind: freind['name'] ))
+
+
